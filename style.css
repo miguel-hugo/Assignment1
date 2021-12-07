@@ -10,7 +10,7 @@ body {
 /* ---------------CONTAINER FLUID--------------- */
 .container-fluid{
     width: 100%;
-    display:flex;
+    display: flex;
 }
 
 .container-fluid img{
@@ -114,6 +114,7 @@ body {
     }
 
     .content{
-
+        width:100%;
+        margin-top:auto;
     }
 }
