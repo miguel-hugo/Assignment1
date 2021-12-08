@@ -11,6 +11,9 @@ body {
 .container-fluid{
     width: 100%;
     display: flex;
+    background-color: aliceblue;
+    height: 100%;
+    overflow: auto;
 }
 
 .container-fluid img{
@@ -22,18 +25,21 @@ body {
 
 /* ---------------SIDEBAR--------------- */
 .content{
-    width: 70%;
-    margin-left: 30%;
+    justify-content:center;
+    display: flex;
 }
 
+.content a img{
+    width: 350px;
+    
+}
+
+
 .sidebar {
-    width: 30%;
     position: fixed;
     background-color:rgb(30, 34, 41);
-    padding: 0px;
+    padding: 25px;
     height: 100%;
-    left: 0;
-    top: 0;
 }
 
 .sidebar h1{
@@ -104,17 +110,21 @@ body {
 
 .main img:hover{
     opacity: 0.3;
-
 }
 
-@media (max-width:1024px){
+@media (min-width: 768px) and (max-width:1024px){
+    .sidebar{
+        width: auto;
+        height:fit-content;
+    }
+
+    .content a img{
+        min-width:350px;
+    }
+}
+@media (max-width: 768px){
     .sidebar{
         width: 100%;
         height: fit-content;
-    }
-
-    .content{
-        width:100%;
-        margin-top:auto;
     }
 }
