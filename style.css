@@ -34,6 +34,9 @@ body {
     
 }
 
+.outer-container content p{
+    padding:50px;
+}
 
 .sidebar {
     position: fixed;
