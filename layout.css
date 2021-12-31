@@ -13,20 +13,19 @@ body {
 	height: 100%;
 }
 
+.container-fluid{
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+    height: 100%;
+    overflow: auto;
+}
+
 .sidebar {
-	display: table-cell;
-	width: 33%;
-	vertical-align: top;
-    position: fixed;
-    z-index: 1000;
+	position: fixed;
     background-color:rgb(30, 34, 41);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    padding: 20px 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    flex-grow: 2;
+    padding: 25px;
+    height: 100%;
 }
 
 .sidebar h1{
@@ -98,7 +97,7 @@ body {
     }
 }
 
-@media (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px){
     .sidebar{
         width: 100%;
         height: fit-content;
