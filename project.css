@@ -1,0 +1,77 @@
+.banner{
+    padding-top: 100px;
+    padding-bottom:50px;
+}
+
+.banner img{
+    width: 1000px;
+    margin: auto;
+}
+
+.intro{
+    margin-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 100px;
+}
+
+.main p{
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.header{
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+.header h1{
+    margin: auto;
+    font-size:64px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.col-md-6 image{
+    background-color: #C0F1D2;
+}
+
+.artifact{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+
+.head2 h2{
+    font-weight:bold; 
+    color:#5CC584; 
+    margin-bottom: 25px; 
+    text-align: center;
+}
+
+.video{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px){
+    .intro{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header h1{
+        font-size: 48px;
+    }
+}
