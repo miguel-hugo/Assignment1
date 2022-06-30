@@ -1,11 +1,20 @@
 .banner{
     padding-top: 100px;
     padding-bottom:50px;
+    height: 600px;
 }
 
 .banner img{
-    width: 1000px;
-    margin: auto;
+    height: 400px;
+}
+
+.banner h1{
+    font-size: 64pt; 
+    font-weight: 600;
+}
+
+.banner h5{
+    font-weight: 400;
 }
 
 .intro{

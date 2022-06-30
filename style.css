@@ -11,7 +11,7 @@ body {
 .container-fluid{
     width: 100%;
     display: flex;
-    background-color: aliceblue;
+    background-color: white;
     height: 100%;
     overflow: auto;
 }
@@ -42,7 +42,7 @@ body {
     position: fixed;
     background-color:rgb(30, 34, 41);
     padding: 25px;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .sidebar h1{
@@ -78,7 +78,7 @@ body {
     border-radius: 50%;
     margin: 0 auto;
     display: block;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 50px;
 }
 
@@ -98,36 +98,110 @@ body {
 }
 
 /* ---------------MAIN--------------- */
-.main {
+.content {
+    width:67%;
     font-family: Lato;
     display: flex;
     justify-content: center;
 }
 
-.main img{
-    width: 350px; 
-    height: 350px;
-    margin-top: 50px;
-    
+.content img{
+    width: 100%; 
+    height: 100%;    
 }
 
-.main img:hover{
+.content img:hover{
+    background-color: black;
     opacity: 0.3;
 }
+
+.overlay{
+    display: none;
+    position: relative;
+    text-align: center;
+    top: -250px;
+    bottom: 100px;
+
+}
+
+
+a.wrapper:hover .overlay {
+    display:block;
+}
+
+table {
+    padding: 0;
+}
+
+.w-100{
+    height:50px;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100%;
+    margin-left:50px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
 
 @media (min-width: 768px) and (max-width:1024px){
     .sidebar{
         width: auto;
-        height:fit-content;
     }
 
     .content a img{
         min-width:350px;
     }
+
+    .w-100{
+        height:0
+    }
+
+    .col-md{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
     .sidebar{
         width: 100%;
         height: fit-content;
+        margin-bottom: 50px;
     }
+
+    .w-100{
+        height:0
+    }
+
+    .col-md{
+        margin-bottom: 50px;
+    }
+    
 }

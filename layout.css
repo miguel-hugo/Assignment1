@@ -7,11 +7,6 @@ body {
 	height: 100%;
 }
 
-.outer-container {
-	display: table;
-	width: 100%;
-	height: 100%;
-}
 
 .container-fluid{
     width: 100%;
@@ -61,7 +56,7 @@ body {
     border-radius: 50%;
     margin: 0 auto;
     display: block;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 50px;
 }
 
@@ -81,13 +76,8 @@ body {
     color: royalblue;
 }
 
-.content {
-	display: table-cell;
-	width: 67%;
-	vertical-align: top;
-}
 
-@media (max-width:640px){
+@media (max-width:768px){
     .sidebar{
         width: 100%;
         height: fit-content;
@@ -100,9 +90,8 @@ body {
 @media (min-width: 768px) and (max-width: 1024px){
     .sidebar{
         width: 100%;
-        height: fit-content;
     }
-    .content{
+    /* .content{
         display:inline-block;
-    }
+    } */
 }
