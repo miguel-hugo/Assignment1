@@ -83,8 +83,13 @@ iframe{
     height: 100%;
 }
 
+/* @media (min-width: 768px){
+    .banner img{
+        min-width:400px;
+    }
+} */
 
-@media (max-width: 768px){
+@media (max-width: 767px){
     .intro{
         padding-left: 15px;
         padding-right: 15px;
@@ -100,5 +105,9 @@ iframe{
 
     .bannertext{
         text-align: center;
+    }
+
+    .text h2{
+        margin-top: 25px;
     }
 }
