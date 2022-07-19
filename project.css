@@ -39,6 +39,10 @@
     font-size: large;
 }
 
+.skills{
+    text-decoration: underline;
+}
+
 .header{
     height: 250px;
     margin-bottom: 100px;
@@ -60,6 +64,18 @@
     padding-right: 100px;
     margin-bottom: 100px;
 }
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .image{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+} */
 
 .head2 h2{
     font-weight:bold; 
